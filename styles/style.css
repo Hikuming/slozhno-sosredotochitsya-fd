@@ -241,7 +241,6 @@ footer .title-style {
 
   .main__section-concentrate:nth-child(odd) {
     grid-template-columns: 1fr 2fr;
-    gap: 20px;
   }
 
   .main__section-concentrate:nth-child(odd) section {
@@ -294,6 +293,14 @@ footer .title-style {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
+  .main__section-concentrate:nth-child(odd) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .main__section-concentrate:nth-child(odd) section {
+    grid-column: 2 / 4;
+  }
+
   .main__section-concentrate:nth-child(2) {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: min-content 1fr;
@@ -307,5 +314,9 @@ footer .title-style {
 
   .main__section-concentrate:nth-child(2) section {
     grid-row: 2;
+  }
+
+  .main__section-concentrate-how-to h3 {
+    grid-column: 2 / 4;
   }
 }
