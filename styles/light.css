@@ -23,10 +23,11 @@
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
+  background-image: var(--cover-image-light);
+  background-color: var(--bg-color-page);
 }
 
 .theme-light .decorative {
-  /* Вам также нужно будет написать ряд подобных селекторов */
   display: none;
 }
 
