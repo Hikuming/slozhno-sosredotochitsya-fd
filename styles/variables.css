@@ -2,3 +2,51 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  /* font */
+  --main-font-family: "IBM Plex Mono";
+
+  /* --main-font-size-title: 116px; */
+  --main-font-size: 18px;
+
+  /* cover image */
+  --cover-image-dark: url("../images/cover-image-dark.png");
+  --cover-image-light: url("../images/cover-image-light.png");
+  --main-cover-image: var(--cover-image-dark);
+
+  /* padding*/
+  --padding-mobile: 10px;
+  --padding-desktop: 20px;
+  --main-padding: var(--padding-mobile);
+
+  /* dark-colors */
+  --dark-deep-blue: #000028;
+  --dark-neon-violet: #db00ff;
+  --dark-neon-red: #ff0070;
+  --dark-light-pink: #f1b2ce;
+
+  /* light-colors */
+  --light-deep-grey: #353430;
+  --light-pink: #ff8dcb;
+  --light-light-pink: #ffc2e6;
+  --light-white: #fff1f7;
+
+  --accent-color: var(--dark-neon-red);
+  --bg-color-page: var(--dark-deep-blue);
+  --accent-color-hover: rgb(from var(--dark-neon-red) r g b / 0.4);
+  --color-header__title: var(--dark-neon-violet);
+  --color-shadow: var(--dark-neon-red);
+  --color_title-decor: var(--dark-deep-blue);
+  --bg-color__title-decor: var(--dark-neon-red);
+  --color-text: var(--dark-light-pink);
+}
+
+@media (width >= 768px) {
+  :root {
+    --main-padding: var(--padding-desktop);
+  }
+}
+
+@media (width >= 1024px) {
+}
