@@ -1,5 +1,8 @@
-.page {
+body {
   background-color: var(--bg-color-page);
+}
+
+.page {
   font-family: var(--main-font-family);
   font-size: var(--main-font-size);
   line-height: 23.4px;

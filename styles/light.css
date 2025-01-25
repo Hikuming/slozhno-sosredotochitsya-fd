@@ -34,7 +34,7 @@
     --color-text: var(--light-deep-grey);
   }
 
-  .decorative {
+  .theme-light .decorative {
     display: none;
   }
 }
