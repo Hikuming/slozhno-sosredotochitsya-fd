@@ -47,6 +47,3 @@
     --main-padding: var(--padding-desktop);
   }
 }
-
-@media (width >= 1024px) {
-}
