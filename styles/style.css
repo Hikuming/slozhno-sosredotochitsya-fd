@@ -1,7 +1,4 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   background-color: var(--bg-color-page);
   font-family: var(--main-font-family);
   font-size: var(--main-font-size);
@@ -27,18 +24,15 @@ header {
   margin-bottom: 40px;
 }
 
-/* добавляем деко зоне relative чтобы before after были абсолютами от него
-и при применении к footer деко были в нём */
 .decorated-zone {
   position: relative;
 }
 
 .decorated-zone::before {
   content: "";
-  position: absolute; /* вырываем из разметки чтобы ничего не ломал */
+  position: absolute;
   top: var(--main-padding);
   right: var(--main-padding);
-  /* сам элемент */
   width: 25px;
   height: 25px;
   border-top: 1px solid var(--accent-color);
@@ -133,7 +127,6 @@ main {
 }
 
 .main__section-concentrate {
-  /* общий стиль для секций с текстом  */
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
@@ -187,7 +180,6 @@ main {
 }
 
 img {
-  /* закидываем стили для картинок  чтобы сразу тянулись*/
   max-inline-size: 100%;
   max-block-size: 100%;
   min-inline-size: 100%;
