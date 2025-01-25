@@ -8,6 +8,7 @@ body {
   line-height: 23.4px;
   background-image: var(--main-cover-image);
   background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
